@@ -52,6 +52,11 @@ public:
         storeSizeSubjects = sizeSub;//store how many subjects here
         cin.ignore(); //clears special characters like \n,\t from cin inputs to avoid abnormal behavior of the code
         string subjects[100];
+        if (sizeSub == 0){
+            cout<<"No subjects to process";
+            exit(0);
+        }
+        
         for (int i = 0; i < sizeSub; i++) {
             cout << "Enter the name for subject #" << i + 1 << ": ";
             getline(cin, subjects[i]);//User will input their subjects here
