@@ -346,7 +346,7 @@ public:
 
             cout << endl;
             if (numAT == 0) {
-                cout << "Your assessment task grade will be automatically: \033[4m" << fixed << setprecision(2) << show1 << "%" << endl;
+                cout << "Your assessment task grade will be automatically: " << fixed << setprecision(2) << show1 << "%" << endl;
             }
             else if (numAT != 0) {
                 cout << "Computation: (" << fixed << setprecision(0) << totalAssessmentTaskScore << " / " << totalmaxATscore << ")(0.1) = " << fixed << setprecision(2) << show1 << endl;
